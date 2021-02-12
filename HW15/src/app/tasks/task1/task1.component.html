@@ -1,0 +1,14 @@
+
+  <div class="container">
+      <div class="main_block">
+          <p style="display: inline; display: inline;">Bad words: </p><p style="color: red; display: inline;">{{badwordsHTML}}</p>
+
+          <div style="width: 100%;display: flex;justify-content: space-between;">
+            <input type="text" [(ngModel)]="BadWord" placeholder="word here..." required name="BadWord" id='input_world'>
+            <button  (click)="ADDWORD()" id='add_BTN'>Add</button>
+            <button (click)="reset()" id='reset_BTN'>Reset</button>
+          </div>
+          <textarea  id='text_cenzor' [(ngModel)]="cenzor" placeholder="text here..." ></textarea>
+          <button (click)="startCenzor()" id='cenzor'>Cenzor</button>
+      </div>
+  </div>
